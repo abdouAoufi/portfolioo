@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="./tailwind.css">
 </head>
 
-<body class="px-52">
+<body class="px-8 ">
     <nav class="flex justify-between  py-4 border-b-2 border-black">
         <h1 class="font-bold text-2xl">Logo</h1>
-        <ul class="flex">
+        <ul class="hidden md:flex">
             <li class="mx-4"><a href="#">Home</a></li>
             <li class="mx-4"><a href="./project.html">Projects</a></li>
             <li class="mx-4"><a href="./contact.html">Contact me</a></li>
         </ul>
+        <img class="w-8 h-8 md:hidden" src="./images/menu.png" alt="">
     </nav>
 
-    <section class="mt-48 flex px-12">
-        <div class="w-1/2">
+    <section class="mt-12 md:mt-48 block md:flex px-12">
+        <div class="md:w-1/2">
             <h2 class="text-3xl font-bold">Aoufi Abderahmane</h2>
             <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id necessitatibus ex sequi
                 deserunt sapiente
@@ -32,7 +33,7 @@
                 nobis asperiores dignissimos eius fugit aliquid cupiditate vitae! Dolores, culpa vero. Dolorum
                 asperiores numquam quis soluta.</p>
         </div>
-        <div class="w-1/2">
+        <div class="md:w-1/2 mt-8 md:mt-0">
             <img class="rounded-lg" src="./images/image-header.jpg" alt="image header">
         </div>
     </section>
