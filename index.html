@@ -2,41 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aoufi abderahmane</title>
-    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./tailwind.css" />
 </head>
 
-<body class="px-8 ">
-    <nav class="flex justify-between  py-4 border-b-2 border-black">
+<body class="px-8">
+    <nav class="flex justify-between py-4 border-b-2 border-black">
         <h1 class="font-bold text-2xl">Logo</h1>
         <ul class="hidden md:flex">
             <li class="mx-4"><a href="#">Home</a></li>
             <li class="mx-4"><a href="./project.html">Projects</a></li>
             <li class="mx-4"><a href="./contact.html">Contact me</a></li>
         </ul>
-        <img class="w-8 h-8 md:hidden" src="./images/menu.png" alt="">
+
+        <img id="toggle" class="w-8 h-8 md:hidden" src="./images/menu.png" alt="" />
     </nav>
+
+    <div class="hidden" id="menu-mobile">
+        <div class="flex justify-center">
+            <ul class="flex mt-2 w-1/2 border-4 border-green-700 flex-col p-8">
+                <li class="mx-4"><a href="#">Home</a></li>
+                <li class="mx-4"><a href="./project.html">Projects</a></li>
+                <li class="mx-4"><a href="./contact.html">Contact me</a></li>
+            </ul>
+        </div>
+    </div>
 
     <section class="mt-12 md:mt-48 block md:flex px-12">
         <div class="md:w-1/2">
             <h2 class="text-3xl font-bold">Aoufi Abderahmane</h2>
-            <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id necessitatibus ex sequi
-                deserunt sapiente
-                unde accusamus? Sequi ex quod, et omnis pariatur quibusdam deserunt, fugiat ullam, qui exercitationem ab
-                nobis asperiores dignissimos eius fugit aliquid cupiditate vitae! Dolores, culpa vero. Dolorum
-                asperiores numquam quis soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-                necessitatibus ex sequi deserunt sapiente
-                unde accusamus? Sequi ex quod, et omnis pariatur quibusdam deserunt, fugiat ullam, qui exercitationem ab
-                nobis asperiores dignissimos eius fugit aliquid cupiditate vitae! Dolores, culpa vero. Dolorum
-                asperiores numquam quis soluta.</p>
+            <p class="mt-8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id necessitatibus ex sequi deserunt sapiente unde accusamus? Sequi ex quod, et omnis pariatur quibusdam deserunt, fugiat ullam, qui exercitationem ab nobis asperiores dignissimos eius fugit aliquid
+                cupiditate vitae! Dolores, culpa vero. Dolorum asperiores numquam quis soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id necessitatibus ex sequi deserunt sapiente unde accusamus? Sequi ex quod, et omnis pariatur quibusdam
+                deserunt, fugiat ullam, qui exercitationem ab nobis asperiores dignissimos eius fugit aliquid cupiditate vitae! Dolores, culpa vero. Dolorum asperiores numquam quis soluta.
+            </p>
         </div>
         <div class="md:w-1/2 mt-8 md:mt-0">
-            <img class="rounded-lg" src="./images/image-header.jpg" alt="image header">
+            <img class="rounded-lg" src="./images/image-header.jpg" alt="image header" />
         </div>
     </section>
+    <script src="./script/app.js"></script>
 </body>
 
 </html>

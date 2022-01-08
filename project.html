@@ -2,50 +2,60 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My personal projects</title>
-    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./tailwind.css" />
 </head>
 
 <body class="px-8">
-
-    <nav class="flex justify-between  py-4 border-b-2 border-black">
+    <nav class="flex justify-between py-4 border-b-2 border-black">
         <h1 class="font-bold text-2xl">Logo</h1>
         <ul class="hidden md:flex">
             <li class="mx-4"><a href="#">Home</a></li>
             <li class="mx-4"><a href="./project.html">Projects</a></li>
             <li class="mx-4"><a href="./contact.html">Contact me</a></li>
         </ul>
-        <img class="w-8 h-8 md:hidden" src="./images/menu.png" alt="">
+        <div class="hidden" id="menu-mobile">
+            <ul class="flex flex-col border border-gray p-8">
+                <li class="mx-4"><a href="#">Home</a></li>
+                <li class="mx-4"><a href="./project.html">Projects</a></li>
+                <li class="mx-4"><a href="./contact.html">Contact me</a></li>
+            </ul>
+        </div>
+        <img id="toggle" class="block w-8 h-8 md:hidden" src="./images/menu.png" alt="" />
+
     </nav>
 
-
     <header class="text-center mt-14">
-        <h1 class="text-2xl font-bold">I am Aoufi Abderahmane full-stack javascript developer</h1>
-        <p class="text-gray-400 mt-4">Hi I’m full-stack Javascript developer prefer working with MERN stack
-            Don’t trust me! <span class="text-red-600 font-semibold">trust my work</span> </p>
+        <h1 class="text-2xl font-bold">
+            I am Aoufi Abderahmane full-stack javascript developer
+        </h1>
+        <p class="text-gray-400 mt-4">
+            Hi I’m full-stack Javascript developer prefer working with MERN stack Don’t trust me!
+            <span class="text-red-600 font-semibold">trust my work</span>
+        </p>
     </header>
 
     <section class="mt-24 md:flex md:justify-between">
         <div class="mt-4 md:mt-0 border mx-4 flex-1 border-gray-400 p-6 rounded-md">
-            <h3 class="text-xl font-semibold ">Shoping website</h3>
+            <h3 class="text-xl font-semibold">Shoping website</h3>
             <p class="mt-2">An Ecommerce webiste for selling shoes</p>
-            <img class="mt-4"  src="./images/project.jpeg" alt="">
+            <img class="mt-4" src="./images/project.jpeg" alt="" />
         </div>
-        <div class=" mt-4 md:mt-0 border mx-4 flex-1 border-gray-400 p-6 rounded-md">
-            <h3 class="text-xl font-semibold ">Shoping website</h3>
+        <div class="mt-4 md:mt-0 border mx-4 flex-1 border-gray-400 p-6 rounded-md">
+            <h3 class="text-xl font-semibold">Shoping website</h3>
             <p class="mt-2">An Ecommerce webiste for selling shoes</p>
-            <img class="mt-4"  src="./images/project.jpeg" alt="">
+            <img class="mt-4" src="./images/project.jpeg" alt="" />
         </div>
-        <div class=" mt-4 md:mt-0 border mx-4 flex-1 border-gray-400 p-6 rounded-md">
-            <h3 class="text-xl font-semibold ">Shoping website</h3>
+        <div class="mt-4 md:mt-0 border mx-4 flex-1 border-gray-400 p-6 rounded-md">
+            <h3 class="text-xl font-semibold">Shoping website</h3>
             <p class="mt-2">An Ecommerce webiste for selling shoes</p>
-            <img class="mt-4"  src="./images/project.jpeg" alt="">
+            <img class="mt-4" src="./images/project.jpeg" alt="" />
         </div>
     </section>
-
+    <script src="./script/app.js"></script>
 </body>
 
 </html>
